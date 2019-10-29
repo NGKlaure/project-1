@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+         <meta charset="UTF-8">
+         
+
+         <!-- The welcome struct (shown in the main.go code) is received within the HTML and we just need to use the . operator and retrieve the information we want -->
+         <title>Welcome {{.Name}} Machine</title>
+   </head>
+   <body>
+      <div class="welcome center"><h1>Welcome on the  {{.Name}} machine</h1></div>
+
+      <p>select and option to see system's information</p>
+
+      <a href="/gethwdata">Hadward  infos</a><br>
+      <h4></h4>
+      <a href="/getCPUdata">CPU infos</a><br>
+      <a href="/getDiskdata"> Disk infos</a><br>
+      <a href="/getHostInfos"> Host infos</a><br>
+      <a href="/getProcInfos"> Processes infos</a><br>
+      <a href="/getMemoryInfos"> Memory infos</a><br>
+      <a href="/getInterfaceInfos"> Network interface infos</a><br>
+   </body>
+</html>
