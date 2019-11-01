@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+         <meta charset="UTF-8">
+         
+
+         <!-- The welcome struct (shown in the main.go code) is received within the HTML and we just need to use the . operator and retrieve the information we want -->
+         <title>Welcome {{.Name}} Machine</title>
+   </head>
+   <body>
+      <div class="welcome center"><h1>Welcome on my {{.Name}} machine</h1></div>
+
+      Welcome on my {{.Name}} machine
+     
+      <h4></h4>
+      <p>kill process</p>
+      <form action= "/formsubmit"  method="POST"></form>
+         enter the process id : <input name="pid" type="text"/><br>
+          <input type="submit" value="Kill process"/>
+      </form>
+        <h3></h3>
+     
+      
+      
+   </body>
+</html>

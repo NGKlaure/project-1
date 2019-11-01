@@ -367,6 +367,7 @@ func Formsubmit(w http.ResponseWriter, r *http.Request) {
 	//getpid from the html form as a string
 	getpid := r.FormValue("pid")
 
+	fmt.Println(getpid)
 	//convert into and int
 	i1, err := strconv.Atoi(getpid)
 	handleErr(err)
