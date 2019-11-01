@@ -9,21 +9,23 @@
          <title>Welcome {{.Name}} Machine</title>
    </head>
    <body>
-      <div class="welcome center"><h1>Welcome on the  {{.Name}} machine</h1></div>
+      <div class="welcome center"><h1>Welcome on my {{.Name}} machine</h1></div>
 
       <p>select and option to see system's information</p>
 
-      
-      <a href="/getCPUdata">CPU infos</a><br>
-      <a href="/getDiskdata"> Disk infos</a><br>
-      <a href="/getHostInfos"> Host infos</a><br>
-      <a href="/getProcInfos"> Processes infos</a><br>
-      <a href="/getMemoryInfos"> Memory infos</a><br>
-      <a href="/getInterfaceInfos"> Network interface infos</a><br>
-      <a href="/PrintProcInfos">  Display PID Processes  and executable name using "github.com/mitchellh/go-ps" </a><br>
+      <ul style="list-style-type:circle;">
+         <li> <a href="/getCPUdata">CPU infos</a><br></li>
+         <li><a href="/getDiskdata"> Disk infos</a><br></li>
+         <li> <a href="/getHostInfos"> Host infos</a><br></li>
+         <li><a href="/getProcInfos"> Processes infos</a><br></li>
+         <li> <a href="/getMemoryInfos"> Memory infos</a><br></li>
+         <li><a href="/getInterfaceInfos"> Network interface infos</a><br></li>
+         <li><a href="/PrintProcInfos">  Display PID Processes  and executable name " </a><br></li>
 
-      <a href="/PrintProc CPUInfos"> Display pID processes and their cup utilisation</a><br>
-      
+         <li><a href="/PrintProc CPUInfos"> Display PID processes and their cup utilisation</a><br></li>
+         <li> <a href="/killpform"> kill process</a><br></li>
+      </ul> 
+   
       
    </body>
 </html>
