@@ -362,10 +362,11 @@ func Formsubmit(w http.ResponseWriter, r *http.Request) {
 
 	temp, _ := template.ParseFiles("template/killp.html")
 
+	var getpid string
 	proc := Process{}
 	arg1 := "kill"
 	//getpid from the html form as a string
-	getpid := r.FormValue("pid")
+	getpid = r.FormValue("pid")
 
 	fmt.Println(getpid)
 	//convert into and int
