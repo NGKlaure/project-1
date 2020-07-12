@@ -5,7 +5,7 @@
 
 ## Nadine Gadjou
 
-Application  that display informations of your laptop
+Application  that display system informations of your laptop and a remote laptop (connected via SSH)on a web page
 ##
 This application use Html page to display information on your system such as :
 your host name ,platform, disk space, cpu Utilisation,memory utilisation,
